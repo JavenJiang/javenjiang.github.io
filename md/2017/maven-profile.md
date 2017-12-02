@@ -2,6 +2,7 @@
 title: Maven Profile
 date: 2017-11-15
 tags: maven
+categories: Develop
 ---
 
 Maven的Profile用于在不同的环境下应用不同的配置，这里的“环境”可以是操作系统，jdk，配置文件等等
