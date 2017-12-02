@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="kettle," />
 
 
 
@@ -79,16 +79,20 @@
 
 
 
-<meta name="description" content="where is a will, there is a way.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="My World">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class 为何要在kettle中使用”java code”? 更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需要使用kettle来控制流程">
+<meta name="keywords" content="kettle">
+<meta property="og:type" content="article">
+<meta property="og:title" content="kettle-javacode">
+<meta property="og:url" content="http://yoursite.com/2017/12/01/kettle-javacode/index.html">
 <meta property="og:site_name" content="My World">
-<meta property="og:description" content="where is a will, there is a way.">
+<meta property="og:description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class 为何要在kettle中使用”java code”? 更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需要使用kettle来控制流程">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://anotherreeshu.files.wordpress.com/2015/02/capture.png">
+<meta property="og:updated_time" content="2017-12-01T14:59:44.247Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My World">
-<meta name="twitter:description" content="where is a will, there is a way.">
+<meta name="twitter:title" content="kettle-javacode">
+<meta name="twitter:description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class 为何要在kettle中使用”java code”? 更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需要使用kettle来控制流程">
+<meta name="twitter:image" content="https://anotherreeshu.files.wordpress.com/2015/02/capture.png">
 
 
 
@@ -118,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/01/kettle-javacode/"/>
 
 
 
 
 
-  <title>My World</title>
+  <title>kettle-javacode | My World</title>
   
 
 
@@ -143,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +240,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/01/kettle-javacode/" itemprop="url">kettle-javacode</a></h1>
+          <h1 class="post-title" itemprop="name headline">kettle-javacode</h1>
         
 
         <div class="post-meta">
@@ -321,9 +322,7 @@
       
 
       
-        
-          
-            <p>最近因为团队需要，所以研究了下kettle的User Defined Java Class</p>
+        <p>最近因为团队需要，所以研究了下kettle的User Defined Java Class</p>
 <p>为何要在kettle中使用”java code”?</p>
 <p>更加灵活，kettle本身是个流程控制的工具，如果我们使用<code>java code</code>可以最大限度的挖掘kettle的潜力，我们可在<code>java code</code>中自由设置要<br>传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。</p>
 <p>我们需要使用kettle来控制流程，我们还需要从ElasticSearcher中取出数据做进一步操作，而kettle并没有提供ES取数的相关对象,<br>这时<code>java code</code>就派上用场了，我们可以在java代码中实现对ES的查询，生成相应的存储媒介<br>(如:Excel,text等)，或者传出到下一个对象中。</p>
@@ -346,8 +345,6 @@
 <p>官方wiki:<br><a href="https://wiki.pentaho.com/display/EAI/User+Defined+Java+Class" target="_blank" rel="external">https://wiki.pentaho.com/display/EAI/User+Defined+Java+Class</a><br>相关接口文档:<br><a href="https://javadoc.pentaho.com/kettle/org/pentaho/di/trans/steps/userdefinedjavaclass/TransformClassBase.html" target="_blank" rel="external">https://javadoc.pentaho.com/kettle/org/pentaho/di/trans/steps/userdefinedjavaclass/TransformClassBase.html</a><br>相关博客：<br><a href="https://anotherreeshu.wordpress.com/2015/02/07/using-external-jars-import-in-pentaho-data-integration/" target="_blank" rel="external">https://anotherreeshu.wordpress.com/2015/02/07/using-external-jars-import-in-pentaho-data-integration/</a></p>
 </blockquote>
 
-          
-        
       
     </div>
     
@@ -362,154 +359,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/15/maven-profile/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JavenJiang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My World">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/15/maven-profile/" itemprop="url">Maven Profile</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-15T00:00:00+08:00">
-                2017-11-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/kettle/" rel="tag"># kettle</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Maven的Profile用于在不同的环境下应用不同的配置，这里的“环境”可以是操作系统，jdk，配置文件等等</p>
-<p>如果说你有两个配置文件夹在src目录下：</p>
-<blockquote>
-<p>env_dev   开发环境</p>
-<p>env_prod  线上环境</p>
-</blockquote>
-<p>分别对应不同的环境，在不同的环境下使用不同的配置文件，你会怎么做？</p>
-<p>我们可以在pom文件中加入以下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">    &lt;resources&gt;</span><br><span class="line">        &lt;resource&gt;</span><br><span class="line">            &lt;directory&gt;src/$&#123;env&#125;&lt;/directory&gt;</span><br><span class="line">        &lt;/resource&gt;</span><br><span class="line">    &lt;/resources&gt;</span><br><span class="line">&lt;/build&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;profiles&gt;</span><br><span class="line">    &lt;profile&gt;</span><br><span class="line">        &lt;id&gt;env_dev&lt;/id&gt;</span><br><span class="line">        &lt;properties&gt;</span><br><span class="line">            &lt;env&gt;env_dev&lt;/env&gt;</span><br><span class="line">        &lt;/properties&gt;</span><br><span class="line">            &lt;activation&gt;</span><br><span class="line">                &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;</span><br><span class="line">            &lt;/activation&gt;</span><br><span class="line">    &lt;/profile&gt;</span><br><span class="line">    &lt;profile&gt;</span><br><span class="line">        &lt;id&gt;env_prod&lt;/id&gt;</span><br><span class="line">        &lt;properties&gt;</span><br><span class="line">            &lt;env&gt;env_prod&lt;/env&gt;</span><br><span class="line">        &lt;/properties&gt;</span><br><span class="line">    &lt;/profile&gt;</span><br><span class="line">&lt;/profiles&gt;</span><br></pre></td></tr></table></figure>
-<p>或者</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;profiles&gt;</span><br><span class="line">  &lt;profile&gt;</span><br><span class="line">    &lt;id&gt;env_dev&lt;/id&gt;</span><br><span class="line">    &lt;build&gt;</span><br><span class="line">      &lt;resources&gt;</span><br><span class="line">        &lt;resource&gt;</span><br><span class="line">          &lt;directory&gt;src/env_dev&lt;/directory&gt;</span><br><span class="line">        &lt;/resource&gt;</span><br><span class="line">      &lt;/resources&gt;</span><br><span class="line">    &lt;/build&gt;</span><br><span class="line">  &lt;/profile&gt;</span><br><span class="line">  &lt;profile&gt;</span><br><span class="line">    &lt;id&gt;env_prod&lt;/id&gt;</span><br><span class="line">    &lt;activation&gt;</span><br><span class="line">      &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;</span><br><span class="line">    &lt;/activation&gt;</span><br><span class="line">    &lt;build&gt;</span><br><span class="line">      &lt;resources&gt;</span><br><span class="line">        &lt;resource&gt;</span><br><span class="line">          &lt;directory&gt;src/env_prod&lt;/directory&gt;</span><br><span class="line">        &lt;/resource&gt;</span><br><span class="line">      &lt;/resources&gt;</span><br><span class="line">    &lt;/build&gt;</span><br><span class="line">  &lt;/profile&gt;</span><br><span class="line">&lt;/profiles&gt;</span><br></pre></td></tr></table></figure>
-<p>maven依据配置打包:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn clean package -Dmaven.test.skip=true -P env_prod</span><br></pre></td></tr></table></figure></p>
-<p>-Dmaven.test.skip=true : 跳过测试<br>-P env_prod是配置为线上环境，这里的env_prod为profile中设置的id，通过改变<br>-P后的id值，来实现对不同配置文件夹的使用</p>
-<p>打包完成后，可打开生成的jar或war包，查看其中的配置文件内容，即可验证maven profile的功能</p>
-<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>如何使用maven打包生成jar包或者war包：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">   &lt;plugins&gt;</span><br><span class="line">     &lt;plugin&gt;</span><br><span class="line">       &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span><br><span class="line">       &lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;</span><br><span class="line">       &lt;version&gt;1.2.1&lt;/version&gt;</span><br><span class="line">       &lt;executions&gt;</span><br><span class="line">         &lt;execution&gt;</span><br><span class="line">           &lt;phase&gt;package&lt;/phase&gt;</span><br><span class="line">           &lt;goals&gt;</span><br><span class="line">             &lt;goal&gt;shade&lt;/goal&gt;</span><br><span class="line">           &lt;/goals&gt;</span><br><span class="line">           &lt;configuration&gt;</span><br><span class="line">             &lt;transformers&gt;</span><br><span class="line">               &lt;transformer implementation=&quot;org.apache.maven.plugins.shade.resource.ManifestResourceTransformer&quot;&gt;</span><br><span class="line">                 &lt;mainClass&gt;com.javen&lt;/mainClass&gt;</span><br><span class="line">               &lt;/transformer&gt;</span><br><span class="line">             &lt;/transformers&gt;</span><br><span class="line">           &lt;/configuration&gt;</span><br><span class="line">         &lt;/execution&gt;</span><br><span class="line">       &lt;/executions&gt;</span><br><span class="line">     &lt;/plugin&gt;</span><br><span class="line">   &lt;/plugins&gt;</span><br><span class="line"> &lt;/build&gt;</span><br></pre></td></tr></table></figure>
-<p>生成的jar包含所有依赖，所以可以直接运行，其中mainClass为程序的入口</p>
-<p>这里要补充一句：要想jar通过java -jar xxx.jar 运行，需要满足：<br>1.在jar包中的META-INF、MANIFEST.MF中指定Main-Class,这样才能确定程序的入口在哪里<br>2.要能加载到依赖包</p>
-<p>注意：如果项目中用到了Spring FrameWork,将依赖打到一个jar包中，运行时会出现读取XML schema文件出错。</p>
-<p>原因是SF的多个jar包中包含相同的文件spring.handlers和spring.schemas,如果生成一个jar包会相互覆盖。<br>为了避免互相影响，可以使用AppendingTransformer来对文件内容追加合并：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;  </span><br><span class="line">    &lt;transformers&gt;  </span><br><span class="line">        &lt;transformer implementation=&quot;org.apache.maven.plugins.shade.resource.ManifestResourceTransformer&quot;&gt;  </span><br><span class="line">            &lt;mainClass&gt;com.xxg.Main&lt;/mainClass&gt;  </span><br><span class="line">        &lt;/transformer&gt;  </span><br><span class="line">        &lt;transformer implementation=&quot;org.apache.maven.plugins.shade.resource.AppendingTransformer&quot;&gt;  </span><br><span class="line">            &lt;resource&gt;META-INF/spring.handlers&lt;/resource&gt;  </span><br><span class="line">        &lt;/transformer&gt;  </span><br><span class="line">        &lt;transformer implementation=&quot;org.apache.maven.plugins.shade.resource.AppendingTransformer&quot;&gt;  </span><br><span class="line">            &lt;resource&gt;META-INF/spring.schemas&lt;/resource&gt;  </span><br><span class="line">        &lt;/transformer&gt;  </span><br><span class="line">    &lt;/transformers&gt;  </span><br><span class="line">&lt;/configuration&gt;</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/15/maven-profile/" rel="next" title="Maven Profile">
+                <i class="fa fa-chevron-left"></i> Maven Profile
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -519,10 +398,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -530,6 +410,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -744,6 +628,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
