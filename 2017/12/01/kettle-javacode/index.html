@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="default">
+<html class="theme-next gemini use-motion" lang="default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,20 +79,18 @@
 
 
 
-<meta name="description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class 为何要在kettle中使用”java code”? 更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需要使用kettle来控制流程">
+<meta name="description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class,即java code对象 为何要在kettle中使用java code? 因为它更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需">
 <meta name="keywords" content="kettle">
 <meta property="og:type" content="article">
 <meta property="og:title" content="kettle-javacode">
 <meta property="og:url" content="http://yoursite.com/2017/12/01/kettle-javacode/index.html">
 <meta property="og:site_name" content="My World">
-<meta property="og:description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class 为何要在kettle中使用”java code”? 更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需要使用kettle来控制流程">
+<meta property="og:description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class,即java code对象 为何要在kettle中使用java code? 因为它更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://anotherreeshu.files.wordpress.com/2015/02/capture.png">
-<meta property="og:updated_time" content="2017-12-01T14:59:44.247Z">
+<meta property="og:updated_time" content="2017-12-02T02:55:06.812Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="kettle-javacode">
-<meta name="twitter:description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class 为何要在kettle中使用”java code”? 更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需要使用kettle来控制流程">
-<meta name="twitter:image" content="https://anotherreeshu.files.wordpress.com/2015/02/capture.png">
+<meta name="twitter:description" content="最近因为团队需要，所以研究了下kettle的User Defined Java Class,即java code对象 为何要在kettle中使用java code? 因为它更加灵活，kettle本身是个流程控制的工具，如果我们使用java code可以最大限度的挖掘kettle的潜力，我们可在java code中自由设置要传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。 我们需">
 
 
 
@@ -100,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '5.1.3',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -193,32 +191,22 @@
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
           </a>
         </li>
       
@@ -295,6 +283,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tools/" itemprop="url" rel="index">
+                    <span itemprop="name">Tools</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -322,24 +332,24 @@
       
 
       
-        <p>最近因为团队需要，所以研究了下kettle的User Defined Java Class</p>
-<p>为何要在kettle中使用”java code”?</p>
-<p>更加灵活，kettle本身是个流程控制的工具，如果我们使用<code>java code</code>可以最大限度的挖掘kettle的潜力，我们可在<code>java code</code>中自由设置要<br>传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。</p>
-<p>我们需要使用kettle来控制流程，我们还需要从ElasticSearcher中取出数据做进一步操作，而kettle并没有提供ES取数的相关对象,<br>这时<code>java code</code>就派上用场了，我们可以在java代码中实现对ES的查询，生成相应的存储媒介<br>(如:Excel,text等)，或者传出到下一个对象中。</p>
-<p>##相关配置<br>在<code>java code</code>中引入三方jar,需要做相关的配置，这里可以参考以下博客进行配置</p>
+        <p>最近因为团队需要，所以研究了下kettle的User Defined Java Class,即<code>java code</code>对象</p>
+<p>为何要在kettle中使用<code>java code</code>?</p>
+<p>因为它更加灵活，kettle本身是个流程控制的工具，如果我们使用<code>java code</code>可以最大限度的挖掘kettle的潜力，我们可在<code>java code</code>中自由设置要<br>传入的参数要传出的格式，在中间使用不同的jar包完成相关信息的获取。</p>
+<p>我们需要使用kettle来控制流程，我们还需要从ElasticSearcher中取出数据做进一步操作，而kettle并没有提供ES取数的相关对象,这时<code>java code</code>就派上用场了，我们可以在java代码中实现对ES的查询，生成相应的存储媒介<br>(如:Excel,text等)，或者传出到下一个对象中。</p>
+<h2 id="相关配置"><a href="#相关配置" class="headerlink" title="相关配置"></a>相关配置</h2><p>在<code>java code</code>中引入三方jar,需要做相关的配置，这里可以参考以下博客进行配置</p>
 <blockquote>
 <p><a href="https://anotherreeshu.wordpress.com/2015/02/07/using-external-jars-import-in-pentaho-data-integration/" target="_blank" rel="external">https://anotherreeshu.wordpress.com/2015/02/07/using-external-jars-import-in-pentaho-data-integration/</a></p>
 </blockquote>
-<p>主要分为五步：创建libext -&gt; 放入jar -&gt; 在Launcher.properties中添加<code>:../libext</code> -&gt; 重启 -&gt; 在代码中添加import com.*;<br><img src="https://anotherreeshu.files.wordpress.com/2015/02/capture.png" alt=""></p>
-<p>##Java Code代码编写<br>官方代码样例：</p>
+<h2 id="Java-Code代码编写"><a href="#Java-Code代码编写" class="headerlink" title="Java Code代码编写"></a>Java Code代码编写</h2><p>官方代码样例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">String firstnameField;</span><br><span class="line">String lastnameField;</span><br><span class="line">String nameField;</span><br><span class="line"> </span><br><span class="line">public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException</span><br><span class="line">&#123;</span><br><span class="line">    // Let&apos;s look up parameters only once for performance reason.</span><br><span class="line">    //</span><br><span class="line">    if (first) &#123;</span><br><span class="line">      firstnameField = getParameter(&quot;FIRSTNAME_FIELD&quot;);</span><br><span class="line">      lastnameField = getParameter(&quot;LASTNAME_FIELD&quot;);</span><br><span class="line">      nameField = getParameter(&quot;NAME_FIELD&quot;);</span><br><span class="line">      first=false;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    // First, get a row from the default input hop</span><br><span class="line">    //</span><br><span class="line">    Object[] r = getRow();</span><br><span class="line"> </span><br><span class="line">    // If the row object is null, we are done processing.</span><br><span class="line">    //</span><br><span class="line">    if (r == null) &#123;</span><br><span class="line">      setOutputDone();</span><br><span class="line">      return false;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    // It is always safest to call createOutputRow() to ensure that your output row&apos;s Object[] is large</span><br><span class="line">    // enough to handle any new fields you are creating in this step.</span><br><span class="line">    //</span><br><span class="line">    Object[] outputRow = createOutputRow(r, data.outputRowMeta.size());</span><br><span class="line"> </span><br><span class="line">    String firstname = get(Fields.In, firstnameField).getString(r);</span><br><span class="line">    String lastname = get(Fields.In, lastnameField).getString(r);</span><br><span class="line"> </span><br><span class="line">    // Set the value in the output field</span><br><span class="line">    //</span><br><span class="line">    String name = firstname+&quot; &quot;+lastname;</span><br><span class="line">    get(Fields.Out, nameField).setValue(outputRow, name);</span><br><span class="line"> </span><br><span class="line">    // putRow will send the row on to the default output hop.</span><br><span class="line">    //</span><br><span class="line">    putRow(data.outputRowMeta, outputRow);</span><br><span class="line"> </span><br><span class="line">    return true;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>关于processRow()的官方描述：</p>
 <blockquote>
 <p>The processRow() method is the heart of the step.  This method is called by the transformation in a tight loop and will continue until false is returned.</p>
 </blockquote>
-<p>输入数据获取：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Object[] r = getRow();</span><br><span class="line">String firstname = get(Fields.In, firstnameField).getString(r);</span><br><span class="line">String lastname = get(Fields.In, lastnameField).getString(r);</span><br></pre></td></tr></table></figure></p>
-<p>数据输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Object[] outputRow = createOutputRow(r, data.outputRowMeta.size());</span><br><span class="line">get(Fields.Out, nameField).setValue(outputRow, name);</span><br><span class="line">putRow(data.outputRowMeta, outputRow);</span><br></pre></td></tr></table></figure></p>
-<p>数据输出你还要配置相应的输出字段</p>
+<p>在使用java code时，我们有时候需要从上个对象获取数据，或者将数据传出到下一个对象中，这时我们就需要kettle提供的java方法：</p>
+<p>输入数据获取：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Object[] r = getRow();</span><br><span class="line">//input是存储着上个对象发出的信息的域</span><br><span class="line">String firstname = get(Fields.In, &quot;input&quot;).getString(r);</span><br></pre></td></tr></table></figure></p>
+<p>数据输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//保证你的输出Object[]足够大</span><br><span class="line">Object[] outputRow = createOutputRow(r, data.outputRowMeta.size());</span><br><span class="line">//output存储着要发送的数据的域</span><br><span class="line">get(Fields.Out, &quot;output&quot;).setValue(outputRow, name);</span><br><span class="line">//信息发送动作</span><br><span class="line">putRow(data.outputRowMeta, outputRow);</span><br></pre></td></tr></table></figure></p>
+<p>数据输出还要添加相应的输出域，可以在<code>java code</code>界面下方的字段(Field)标签下，设置input字段和其属性</p>
 <p>参考资料：</p>
 <blockquote>
 <p>官方wiki:<br><a href="https://wiki.pentaho.com/display/EAI/User+Defined+Java+Class" target="_blank" rel="external">https://wiki.pentaho.com/display/EAI/User+Defined+Java+Class</a><br>相关接口文档:<br><a href="https://javadoc.pentaho.com/kettle/org/pentaho/di/trans/steps/userdefinedjavaclass/TransformClassBase.html" target="_blank" rel="external">https://javadoc.pentaho.com/kettle/org/pentaho/di/trans/steps/userdefinedjavaclass/TransformClassBase.html</a><br>相关博客：<br><a href="https://anotherreeshu.wordpress.com/2015/02/07/using-external-jars-import-in-pentaho-data-integration/" target="_blank" rel="external">https://anotherreeshu.wordpress.com/2015/02/07/using-external-jars-import-in-pentaho-data-integration/</a></p>
@@ -434,8 +444,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -457,6 +476,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
             
               
@@ -475,6 +503,14 @@
 
           <div class="links-of-author motion-element">
             
+              
+                <span class="links-of-author-item">
+                  <a href="javenjiangfsof@gmail.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            
           </div>
 
           
@@ -488,6 +524,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#相关配置"><span class="nav-number">1.</span> <span class="nav-text">相关配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-Code代码编写"><span class="nav-number">2.</span> <span class="nav-text">Java Code代码编写</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -520,7 +572,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
 
 
 
