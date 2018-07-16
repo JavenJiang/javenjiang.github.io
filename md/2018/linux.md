@@ -60,5 +60,29 @@ numResult=$(echo ${jsonResult} | grep -P '(?<="value:")[0-9]*' -o)
 ## awk
 
 ```
+//文件中是 id amount 这样的数据，将所有的amount加和
+es_total_amount=$(awk -F'\t' 'BEGIN{
+     es_total_amount=0
+}{
+     es_total_amount=es_total_amount+$2
+}
+END{printf("%d\n",es_total_amount);}' /data/monitor_es_result.txt)
+
+//计算行数加和
+es_id_count=$(awk -F'\t' 'BEGIN{
+     es_id_count=0
+}{
+     es_id_count++
+}
+END{print es_id_count;}' /data/monitor_es_result.txt)
+
+
+awk -F'\t' 'BEGIN{
+    while((getline<"/data/content.txt")){ zhengwen[$1]=$2;title[$1]=$3;}
+}
+{
+    zhengwen_item = zhengwen[$2];
+    title_item = title[$2];
+    ......
 
 ```
