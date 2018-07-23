@@ -17,6 +17,21 @@ sleep 1m
 done
 ```
 
+```
+end=`date -d '30 day ago' "+%Y-%m-%d"`
+start=`date -d '2 day ago' "+%Y-%m-%d"`
+
+#start=`date +%Y-%m-%d`
+while [ "${start}" != "${end}" ]
+do
+  echo `date +"%Y-%m-%d %H:%M:%S"`
+  
+  sleep 5m
+  start=$(date -d "-1 day ${start}" +%Y-%m-%d)
+done
+```
+
+
 ## Crontab
 
 ```

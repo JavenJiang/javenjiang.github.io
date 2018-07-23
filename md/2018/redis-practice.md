@@ -1,7 +1,7 @@
 ---
 title: Redis
 date: 2018-05-13
-tags: Tool
+tags: Redis
 ---
 
 redis 分布式锁
