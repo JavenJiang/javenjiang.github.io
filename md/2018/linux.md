@@ -6,7 +6,7 @@ tags: linux
 
 ## Date traversal script
 ```
-for i in $(seq 1 31)
+for i in $(seq 1 31) //反向 for i in {31..1}
 do
 if [ ${i} -le 9 ]
 then
