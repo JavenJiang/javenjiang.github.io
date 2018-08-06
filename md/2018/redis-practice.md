@@ -34,4 +34,18 @@ Redis分布式锁:
     }
 ```
 redis 有序集合
-redis 有序列表
+
+```
+//过期时间只能设置外部key的过期时间
+zdd key score1 member1
+zdd key score2 member2
+
+```
+
+
+redis 列表
+```
+lpush key value 插入数据到列表左侧
+rpush key value 插入数据到列表右侧
+lrange key 0 -1  -1表示最后一个元素 -2表示倒数第二个元素
+```
